@@ -1,4 +1,6 @@
-# Friend-Recommendation-in-Social-Network-using-GraFRank
+# ELL409 Course Project
+## Friend Recommendation and Ranking using Graph Neural Networks
+### - Subhojit Ghosal (2022MT61976)
 
 # Facebook Social Circles Dataset
 
