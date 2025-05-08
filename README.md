@@ -79,3 +79,22 @@ $z_u^{k, (L)} = F_{\theta}^k\big(m_{u\leftarrow u}^k, z_u^{k, (L - 1)}\big)\\
 $W_a^k \in \mathbb{R}^{D \times D}$, $b_a, \in \mathbb{R}^D$ are trainable parameters of the aggregator, $L$ denotes the current layer, and $\sigma$ denotes the ELU activation function which allows messages to encode both positive and small negative signals.
 
 ---
+
+## Splitting the dataset (**Transductive Split**)
+
+- Need test train and validation split. 
+- But splitting a graph is a non-trivial task (*especially for link prediction*)
+
+### Supervision Edges
+We try and do is hide different edges from GraFrank at test, validation and train time, so that it never learns to use those edges or about their existence when it is training. We can then predict these unseen edges to calculate the loss. These unseen edges are known as supervision edges. 
+
+### Message Edges
+However, we still need some edges in order to aggregate information in the graph. These retained edges will not be used for supervision and will exist only for message passing, and are thus known as message edges.
+
+Step-by-step:
+
+- At training time: only the training message edges are seen by the GNN and used to predict the with the training supervision edges.
+- At validation time: only the training message edges and training supervision edges are seen by the GNN, and the validation supervision edges are predicted.
+- At test time: the training message edges, training supervision edges and validation supervision edges are seen by the GNN, and the **test supervision edges are predicted** (and therfore unseen).
+
+This is known as a transductive split due to the disjoint nature of each edge set with each other
