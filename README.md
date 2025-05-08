@@ -2,6 +2,11 @@
 ## Friend Recommendation and Ranking using Graph Neural Networks
 ### - Subhojit Ghosal (2022MT61976)
 
+<div style="display: flex; justify-content: space-around;">
+  <img src="img/paper_1.jpeg" alt="Image 1" style="width: 45%;"/>
+  <img src="img/facebook_1.png" alt="Image 2" style="width: 45%;"/>
+</div>
+
 ---
 
 # Facebook Social Circles Dataset
