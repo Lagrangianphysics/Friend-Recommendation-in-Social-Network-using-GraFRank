@@ -8,6 +8,13 @@
 </div>
 
 ---
+# Problem Statement
+
+<div style="text-align: center;">
+  <img src="img/problem_statement.jpeg" alt="Problem Statement" style="width: 70%;"/>
+</div>
+
+---
 
 # Facebook Social Circles Dataset
 
@@ -86,6 +93,10 @@ $z_u^{k, (L)} = F_{\theta}^k\big(m_{u\leftarrow u}^k, z_u^{k, (L - 1)}\big)\\
 = \sigma\big(W_a^k\big(z_u^{k, (L-1)}||m_{u\leftarrow u}^k \big) + b_a\big)$
 
 $W_a^k \in \mathbb{R}^{D \times D}$, $b_a, \in \mathbb{R}^D$ are trainable parameters of the aggregator, $L$ denotes the current layer, and $\sigma$ denotes the ELU activation function which allows messages to encode both positive and small negative signals.
+
+<div style="text-align: center;">
+  <img src="img/features.jpeg" alt="Problem Statement" style="width: 70%;"/>
+</div>
 
 ---
 
