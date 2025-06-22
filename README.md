@@ -1,4 +1,4 @@
-# ELL409 Course Project
+# ELL409 Research Project
 ## Friend Recommendation and Ranking using Graph Neural Networks
 ### - Subhojit Ghosal (2022MT61976)
 
