@@ -1,5 +1,5 @@
-# ELL409 Research Project
 ## Friend Recommendation and Ranking using Graph Neural Networks
+### - [Prof. Sandeep IITD](https://sites.google.com/view/sandeepkr/home)
 ### - Subhojit Ghosal (2022MT61976)
 
 <div style="display: flex; justify-content: space-around;">
